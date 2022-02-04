@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <script type="text/javascript" src="script.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="form">
+        <form class="input">
+          <div class="item">
+            <input type="number" min="1" id="input" />
+          </div>
+          <div class="item">
+            <input id="min" type="radio" value="min" name="input" />
+            <label for="sec">Hours to min</label>
+          </div>
+          <div class="item">
+            <input id="sec" type="radio" value="sec" name="input" />
+            <label for="sec">hours to seconds</label>
+          </div>
+        </form>
+      </div>
+      <div>
+        <p>1 hours = 60 mins</p>
+      </div>
+      <div>
+        <button type="button" onclick="convert()">Convert</button>
+      </div>
+      <div class="result">
+        <p id="result"></p>
+      </div>
+    </div>
+  </body>
+</html>
